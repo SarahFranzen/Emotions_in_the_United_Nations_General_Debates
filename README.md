@@ -3,8 +3,15 @@
 ### Author: Sarah Franzen
 
 #### Project Overview
-This GitHub repository contains the code and data for my Master’s thesis. The project analyzes UN General Debate speeches (1946–2023) and scores them for emotion and rationality using a text-based machine learning approach.
+This GitHub repository contains the code and data for my master’s thesis. The project analyzes UN General Debate speeches (1946–2023) and scores them for emotion and rationality using a text-based machine learning approach. This project replicates the paper “Emotion and Reasoning in Political Language” by Gennaro and Ash (2021) using a different dataset. I utilize their dictionaries, stopwords list, and list of procedural words, which are available at https://zenodo.org/records/5748084
 
+Before running the scripts, you need to download the following files and place them in the appropriate folders:
+
+- procedural_words.pkl
+- stopwords.pkl
+- dictionary_affect.pkl
+- dictionary_cognition.pkl
+  
 #### Technical Specifications
 Operating System: Windows 11
 Language: Python
@@ -24,7 +31,8 @@ Folder Structure: Automatic Setup once you set your working directory
 ├── Code/
 │   ├── 0_data_creation/                       # Script for creating new variables, data cleaning, data preprocessing and word frequencies
 │   ├── 1_model_training_centroids_scoring/    # Script for Word2Vec model training, calculation of centroids and scoring the speeches in emotionality
-│   └── 2_figures /                            # Scripts for descriptive figures and result plots
+│   └── 2_figures /                            # Script for descriptive figures and result plots
+│   └── 3_tables /                             # Script for Summary Statistics
 │
 └── data/
     ├── data_original/     # Raw, unmodified input data
@@ -32,6 +40,8 @@ Folder Structure: Automatic Setup once you set your working directory
     ├── freq/              # (Weighted) Word Counts
     ├── dictionaries/      # Dictionary files 
     ├── preprocessed/      # Preprocessed data
-├── results/               # Final scores and output results
-└── models/                # Trained Word2Vec models
+    ├── results/           # Final scores and output results
+    ├── models/            # Trained Word2Vec models
+fig/                  # Figures
+tables/               # Tables
 ```
