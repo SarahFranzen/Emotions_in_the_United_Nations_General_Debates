@@ -11,6 +11,8 @@ Before running the scripts, you need to download the following files and place t
 - stopwords.pkl
 - dictionary_affect.pkl
 - dictionary_cognition.pkl
+
+The script for data creation takes on average 1h to run. The script for the model training takes approximately 2h.
   
 #### Technical Specifications
 Operating System: Windows 11
