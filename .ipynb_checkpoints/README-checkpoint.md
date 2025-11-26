@@ -72,7 +72,7 @@ tables/                    # Tables
 git clone https://github.com/SarahFranzen/Emotions_in_the_United_Nations_General_Debates.git  
 cd Emotions_in_the_United_Nations_General_Debates
 
-3. Run the analysis:
+2. Run the analysis:
 
 python MAIN.py
 
